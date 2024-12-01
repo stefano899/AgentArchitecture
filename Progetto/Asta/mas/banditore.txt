@@ -15,10 +15,18 @@ messageA(agent1,send_message(asta,banditore),banditore),
 messageA(agent2,send_message(asta,banditore),banditore),
 messageA(agent3,send_message(asta,banditore),banditore),
 messageA(agent4,send_message(asta,banditore),banditore).
-ricezione_offertaE(Offer):>assert(offerte([Offer | OfferteCorrenti])), write('Offerta ricevuta: '), write(Offer), nl, offerteRicevuteA.
+ricezione_offertaE(Agente,Offer):>assert(offerte([(Agente,Offer)])), write('Offerta ricevuta: '), write(Offer), nl, offerteRicevuteA.
 conclude_auction:- offerteRicevuteP.
-conclude_auctionI:>write('Asta conclusa. Offerte ricevute: '), nl, findall(Offer, offerte(Offer), Offerte), write(Offerte), nl, resetOfferte.
+conclude_auctionI:>write('Asta conclusa. Offerte ricevute: '), nl, findall(Offer, offerte(Offer), Offerte), write(Offerte), nl, determina_vincitore.
+determina_vincitore:-max_offer(Offerte, (MaxOffer, AgenteVincitore)),write('Offerta piu alta: '),write(AgenteVincitore), write(' con valore: '), write(MaxOffer),nl, resetOfferte.
 resetOfferte:-retractall(offerte(_)), assert(offerte([])), write('Lista di offerte resettata.'), nl.
+max_offer([(Agente, Offer)], (Agente, Offer)).
+max_offer([(Agente1, Offer1) | T], (AgenteMax, MaxOffer)):-
+    max_offer(T, (Agente2, Offer2)),
+    (Offer1 >= Offer2 -> (AgenteMax = Agente1, MaxOffer = Offer1) ; (AgenteMax = Agente2, MaxOffer = Offer2)).
+    
+
+
 
 %offertaRicevuta:- checkA(Offer),checkA(Offer).
 %conclude_auction:- checkP(Offer),checkP(Offer).

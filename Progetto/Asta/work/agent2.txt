@@ -3,4 +3,6 @@ p:-messageA(banditore,send_message(ready(2),agent2)),mexInviatoA.
 astaE:> once(o).
 o:-inziaA, procedi.
 procedi:- once(m).
-m:-random(R),Offer is floor(R * 100) + 1,assert(offer), messageA(banditore, send_message(ricezione_offerta(offer), agent2), agent2), offertaFattaA.
+m:-random(Offer),messageA(banditore, send_message(ricezione_offerta(agent2,offer), agent2), agent2), offertaFattaA.
+
+
