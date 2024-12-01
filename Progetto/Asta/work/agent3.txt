@@ -1,0 +1,6 @@
+isReadyE:>once(p).
+p:-messageA(banditore,send_message(ready(3),agent3)),mexInviatoA.
+astaE:> once(o).
+o:-inziaA, procedi.
+procedi:- once(m).
+m:-random(R),Offer is floor(R * 100) + 1,assert(offer), messageA(banditore, send_message(ricezione_offerta(offer), agent3), agent3), offertaFattaA.
