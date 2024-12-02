@@ -1,0 +1,24 @@
+:- dynamic ho_salutato/1.
+:- dynamic monetina/1.
+:- dynamic sveglio/1.
+
+sveglio(si).
+monetina(0).
+ho_salutato(no).
+bidder(bidder1).
+bidder(bidder2).
+bidder(bidder3).
+proprietario(proprietario).
+banditore(banditore).
+
+pronto:- sveglio(si), ho_salutato(no).
+prontoI:> write('Ciao a tutti, sono il proprietario!'), nl, retract(ho_salutato(no)), assert(ho_salutato(si)).
+
+richiestaE:> write('Invio oggetto da vendere'), messageA(banditore, send_message(oggetto, Me)).
+
+
+
+richiesta_invioE(bidder):> write('Ho ricevuto una richiesta di spedizione di un oggetto da parte di: '), write(bidder), write(' Per decidere se inviare o meno il pacco, lancero una monetina...'), nl, lancio_monetina.
+
+lancio_monetina:- random(0,2,M), retract(monetina(0)), assert(monetina(M)), (M = 1 -> write('E uscito testa, invio oggetto');
+									     write('E uscito croce, niente spedizione')).
