@@ -2,7 +2,9 @@
 > DALI Multi Agent Systems Framework
 
 Questo sistema multi agente propone di simulare un'asta in cui il banditore risulta essere l'agente centrale che si occupa di gestire l'asta, prendendo in carico l'oggetto di un agente chiamato "proprietario" e di prendere in carico le offerte dei compratori (bidders).
-Il proprietario mette a disposizione un numero illimitato dello stesso oggetto e sancisce un prezzo di vendita: chiunque offra un prezzo superiore o uguale a quello concordato dal proprietario, si aggiudica l'oggetto.
+Il proprietario mette a disposizione al banditore un numero illimitato dello stesso oggetto e sancisce un prezzo di vendita: chiunque offra un prezzo superiore o uguale a quello concordato dal proprietario, si aggiudicherà l'oggetto.
+Il banditore, per decidere di aprire l'asta, lancia un dado composto da numeri che vanno da 1 a 3. Se il dado restituisce 1, allora fa partire l'asta.
+Se dopo un tot di tempo il banditore ancora non apre l'asta, i bidders invieranno un sollecito al banditore, quindi quest'ultimo si troverà forzato ad aprirla.
 Il sistema sarà sviluppato su windows.
 
 
