@@ -1,21 +1,29 @@
-# DALI
+# Asta
 > DALI Multi Agent Systems Framework
 
-DALI is a meta interpreter built on top of Sicstus Prolog (R) (_at the moment_).
+Questo sistema multi agente propone di simulare un'asta in cui il banditore risulta essere l'agente centrale che si occupa di gestire l'asta, prendendo in carico l'oggetto di un agente chiamato "proprietario" e di prendere in carico le offerte dei compratori (bidders).
+Il proprietario mette a disposizione un numero illimitato dello stesso oggetto e sancisce un prezzo di vendita: chiunque offra un prezzo superiore o uguale a quello concordato dal proprietario, si aggiudica l'oggetto.
+Il sistema sarà sviluppato su windows.
 
-![](DALI_logo.png)
 
+## Agenti
 
-## Installation
+* Banditore:
+  - E' l'agente centrale del programma.
+  - Gestisce le offerte ricevute dai compratori.
+  - Mette in vendita l'oggetto. 
 
-DALI is built upon the [SICStus Prolog](https://sicstus.sics.se/download4.html) interpreter,
-for which you a need a valid license. 
-You may use any latest SICStus version at your own risk, but DALI has been tested 
-to work reasonably well with the 4.6.0 version.
+* Proprietario:
+  - E' il proprietario dell'oggetto che vuole vendere;
+  - Ha a disposizione risorse risorse illimitate di quell'oggetto;
+  - E' colui che rende disponibile la vendita dell'oggetto;
+  
 
-Also some OS-specific instructions:
+* Bidders:
+  - Sono coloro che fanno delle offerte al banditore;
+  - Se il bidder ha acquistato un oggetto, non può più fare delle offerte.
 
-**OS X & Linux:**
+## Sequence Diagram
 
 You can download DALI and test it by running an example DALI MAS:
 ```sh
