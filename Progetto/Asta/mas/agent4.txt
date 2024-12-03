@@ -1,8 +1,0 @@
-isReadyE:>once(p).
-p:-messageA(banditore,send_message(ready(4),agent4)),mexInviatoA.
-astaE:> once(o).
-o:-inziaA, procedi.
-procedi:- once(m).
-m:-random(Offer),messageA(banditore, send_message(ricezione_offerta(agent4,offer), agent4), agent4), offertaFattaA.
-
-
