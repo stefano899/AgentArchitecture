@@ -27,7 +27,7 @@ Il sistema sarà sviluppato su windows.
 
 ## Sequence Diagram
 
-![Sequence Diagram](C:\Users\stefa\Desktop\Progetto\AgentArchitecture\documentazione\sequenceAsta.png)
+![Sequence Diagram](sequenceAsta.png)
 
 ## Tabella Event/Action - banditore
 
