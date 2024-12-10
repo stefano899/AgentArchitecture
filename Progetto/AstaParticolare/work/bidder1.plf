@@ -117,3 +117,15 @@ remember_event_mod(message(banditore,send_message(proposta(bidder1,_922409),_922
 past_event(message(banditore,send_message(proposta(bidder1,_922409),_922403),_922403),60).
 action(message(banditore,send_message(proposta(bidder1,_922409),_922403),_922403),normal).
 mod(message(banditore,send_message(proposta(bidder1,_922409),_922403),_922403),check).
+remember_event_mod(message(banditore,send_message(prontoAg,_929549)),number(5),last).
+past_event(message(banditore,send_message(prontoAg,_929549)),60).
+action(message(banditore,send_message(prontoAg,_929549)),normal).
+mod(message(banditore,send_message(prontoAg,_929549)),check).
+remember_event_mod(message(banditore,send_message(proposta([_929527,_929531]),_929527),_929527),number(5),last).
+past_event(message(banditore,send_message(proposta([_929527,_929531]),_929527),_929527),60).
+action(message(banditore,send_message(proposta([_929527,_929531]),_929527),_929527),normal).
+mod(message(banditore,send_message(proposta([_929527,_929531]),_929527),_929527),check).
+remember_event_mod(message(banditore,send_message(prontoAg(_931375),_931375)),number(5),last).
+past_event(message(banditore,send_message(prontoAg(_931375),_931375)),60).
+action(message(banditore,send_message(prontoAg(_931375),_931375)),normal).
+mod(message(banditore,send_message(prontoAg(_931375),_931375)),check).

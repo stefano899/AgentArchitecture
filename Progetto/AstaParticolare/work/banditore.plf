@@ -115,3 +115,14 @@ remember_event_mod(message(_934677,send_message(richiesta,_934685)),number(5),la
 past_event(message(_934677,send_message(richiesta,_934685)),60).
 action(message(_934677,send_message(richiesta,_934685)),normal).
 mod(message(_934677,send_message(richiesta,_934685)),check).
+remember_event_mod(proposta([_921239|_921241]),number(5),last).
+past_event(proposta([_921239|_921241]),60).
+external_event(proposta,normal).
+mod(proposta,check).
+remember_event_mod(check(agente),number(5),last).
+past_event(check(agente),60).
+action(check(agente),normal).
+remember_event_mod(prontoAg(agente),number(5),last).
+past_event(prontoAg(agente),60).
+external_event(prontoAg,normal).
+mod(prontoAg,check).

@@ -12,11 +12,10 @@ proprietario(proprietario).
 banditore(banditore).
 
 pronto:- sveglio(si), ho_salutato(no).
-prontoI:> write('Ciao a tutti, sono il proprietario!'), nl, retract(ho_salutato(no)), assert(ho_salutato(si)).
+prontoI:> sleep(8), write('Ciao a tutti, sono il proprietario!'), nl, retract(ho_salutato(no)), assert(ho_salutato(si)),
+messageA(banditore, send_message(prontoAg(proprietario), Me)).
 
-richiestaE:> write('Invio oggetto da vendere'), messageA(banditore, send_message(oggetto, Me)).
-
-
+richiestaE:> write('Invio oggetto da vendere'),nl, messageA(banditore, send_message(oggetto, Me)).
 
 richiesta_invioE(bidder):> write('Ho ricevuto una richiesta di spedizione di un oggetto da parte di: '), write(bidder), write(' Per decidere se inviare o meno il pacco, lancero una monetina...'), nl, lancio_monetina.
 

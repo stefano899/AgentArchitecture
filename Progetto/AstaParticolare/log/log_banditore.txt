@@ -1,2 +1,0 @@
-send_message(send_message(richiesta,_30467))
-send_message(send_message(apertura,_30045))
