@@ -36,7 +36,7 @@ faccioOfferta:-ho_oggetto(no), apertura_offerte(si), ho_fatto_offerta(no).
 faccioOffertaI:> write('Faccio una offerta'), nl, random(1, 50, O), assert(offerta(O)), write('ho offerto: '), write(O),nl, retract(ho_fatto_offerta(no)), assert(ho_fatto_offerta(si)).
 
 contattoBanditore:- ho_oggetto(no), ho_fatto_offerta(si).
-contattoBanditoreI:> nl, write('Ho inviato l offerta'), offerta(O), messageA(banditore,send_message(proposta([Me,O]),Me), Me).
+contattoBanditoreI:> nl, write('Ho inviato l offerta'), offerta(O), messageA(banditore,send_message(proposta(Me, O),Me)).
 
 accettataE:> nl, write('Ho vinto oggetto'), retract(ho_oggetto(no)), assert(ho_oggetto(si)), nl, write('Invio i richiesta al proprietario riguardo oggetto'),nl, messageA(proprietario, send_message(richiesta_invio(bidder1),Me)).
 

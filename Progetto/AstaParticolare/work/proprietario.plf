@@ -124,3 +124,7 @@ remember_event_mod(message(banditore,send_message(prontoAg(proprietario),_854107
 past_event(message(banditore,send_message(prontoAg(proprietario),_854107)),60).
 action(message(banditore,send_message(prontoAg(proprietario),_854107)),normal).
 mod(message(banditore,send_message(prontoAg(proprietario),_854107)),check).
+remember_event_mod(message(banditore,send_message(prontoAg(_852771))),number(5),last).
+past_event(message(banditore,send_message(prontoAg(_852771))),60).
+action(message(banditore,send_message(prontoAg(_852771))),normal).
+mod(message(banditore,send_message(prontoAg(_852771))),check).

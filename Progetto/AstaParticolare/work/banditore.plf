@@ -126,3 +126,6 @@ remember_event_mod(prontoAg(agente),number(5),last).
 past_event(prontoAg(agente),60).
 external_event(prontoAg,normal).
 mod(prontoAg,check).
+remember_event_mod(hosalutato(_938211),number(5),last).
+past_event(hosalutato(_938211),60).
+action(hosalutato(_938211),normal).

@@ -13,7 +13,7 @@ banditore(banditore).
 
 pronto:- sveglio(si), ho_salutato(no).
 prontoI:> sleep(8), write('Ciao a tutti, sono il proprietario!'), nl, retract(ho_salutato(no)), assert(ho_salutato(si)),
-messageA(banditore, send_message(prontoAg(proprietario), Me)).
+messageA(banditore, send_message(prontoAg(Me))).
 
 richiestaE:> write('Invio oggetto da vendere'),nl, messageA(banditore, send_message(oggetto, Me)).
 
