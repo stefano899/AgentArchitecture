@@ -70,6 +70,7 @@ La primitiva FIPA utilizzata per questo progetto, usando l'apposita chiamata "me
 | accettataE          | Il bidder si vede accettare l'offerta e invia una richiesta di spedizione al proprietario.              |
 
 
+
 ## Installazione
 Per far partire il programma è necessario utilizzare l'ambiente windows e installare l'ultima versione di Sictus Prolog, ovvero SICStus Prolog VC16 4.9.0.
-[Link al Download](https://sicstus.sics.se/download4.html)
+[Link al Download](https://sicstus.sics.se/download4.html) nel file "startmas.bat", sostituire nella sezione "sictus_home" il path corrente con il vostro path dove avete installato SICStus Prolog VC16 4.9.0.
