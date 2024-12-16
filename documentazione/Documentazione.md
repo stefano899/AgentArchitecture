@@ -8,7 +8,7 @@ Se dopo un tot di tempo il banditore ancora non apre l'asta, i bidders invierann
 Il sistema sarà sviluppato su windows.
 La primitiva FIPA utilizzata per questo progetto, usando l'apposita chiamata "messageA" è la seguente: send_message(External_event, sender).
 
-[Link alla repository]([URL](https://github.com/stefano899/AgentArchitecture/edit/main/documentazione/Documentazione.md))
+[Link alla repository](https://github.com/stefano899/AgentArchitecture)
 
 ## Agenti
 
@@ -69,3 +69,7 @@ La primitiva FIPA utilizzata per questo progetto, usando l'apposita chiamata "me
 | contatto_banditoreI | Il bidder invia la proposta di offerta al banditore.                                                    |
 | accettataE          | Il bidder si vede accettare l'offerta e invia una richiesta di spedizione al proprietario.              |
 
+
+## Installazione
+Per far partire il programma è necessario utilizzare l'ambiente windows e installare l'ultima versione di Sictus Prolog, ovvero SICStus Prolog VC16 4.9.0.
+[Link al Download](https://sicstus.sics.se/download4.html)
