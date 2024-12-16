@@ -1,5 +1,0 @@
-send_message(send_message(ready(4),agent4))
-make(mexInviato)
-make(inzia)
-make(inzia)
-make(inzia)

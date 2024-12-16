@@ -1,1 +1,0 @@
-send_message(inform(send_message(prontoAg(_28027)),motivation(refused_message),proprietario))

@@ -1,2 +1,0 @@
-send_message(send_message(prontoAg(_31215),_31215))
-send_message(send_message(sollecito,_30923))
