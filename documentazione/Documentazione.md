@@ -6,7 +6,9 @@ Il proprietario mette a disposizione al banditore un numero illimitato dello ste
 Il banditore, per decidere di aprire l'asta, lancia un dado composto da numeri che vanno da 1 a 3. Se il dado restituisce 1, allora fa partire l'asta.
 Se dopo un tot di tempo il banditore ancora non apre l'asta, i bidders invieranno un sollecito al banditore, quindi quest'ultimo si troverà forzato ad aprirla.
 Il sistema sarà sviluppato su windows.
+La primitiva FIPA utilizzata per questo progetto, usando l'apposita chiamata "messageA" è la seguente: send_message(External_event, sender).
 
+[Link alla repository]([URL](https://github.com/stefano899/AgentArchitecture/edit/main/documentazione/Documentazione.md))
 
 ## Agenti
 
