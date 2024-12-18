@@ -75,3 +75,4 @@ La primitiva FIPA utilizzata per questo progetto, usando l'apposita chiamata "me
 ## Installazione
 Per far partire il programma è necessario utilizzare l'ambiente windows e installare l'ultima versione di Sictus Prolog, ovvero SICStus Prolog VC16 4.9.0.
 [Link al Download](https://sicstus.sics.se/download4.html) nel file "startmas.bat", sostituire nella sezione "sictus_home" il path corrente con il vostro path dove avete installato SICStus Prolog VC16 4.9.0.
+All'interno della cartella "Asta Particolare", creare le cartelle "work" e "log", poi far partire il programma "startmas.bat".
