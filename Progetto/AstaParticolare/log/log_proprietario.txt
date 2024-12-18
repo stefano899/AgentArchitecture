@@ -1,2 +1,0 @@
-send_message(send_message(prontoag(_28139),_28139))
-send_message(send_message(oggetto,_40921))

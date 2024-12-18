@@ -1,3 +1,0 @@
-send_message(send_message(prontoag(_30717),_30717))
-send_message(send_message(sollecito,_30447))
-send_message(send_message(proposta(_44993,12),_44993))

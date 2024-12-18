@@ -1,6 +1,0 @@
-send_message(send_message(richiesta,_31319))
-send_message(send_message(apertura,_46853))
-send_message(send_message(apertura,_52191))
-send_message(send_message(apertura,_52167))
-send_message(send_message(accettata,_46271))
-send_message(send_message(accettata,_30921))
