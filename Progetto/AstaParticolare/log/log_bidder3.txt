@@ -1,0 +1,3 @@
+send_message(send_message(prontoag(_30649),_30649))
+send_message(send_message(proposta(_30539,32),_30539))
+send_message(send_message(richiesta_invio(bidder3),_44103))

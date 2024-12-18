@@ -1,0 +1,49 @@
+:- dynamic ho_salutato/1.
+:- dynamic ho_aperto/1.
+:- dynamic apro/1.
+:- dynamic ho_oggetto/1.
+:- dynamic ricezione_offerte/1.
+
+
+ricezione_offerte(no).
+sveglio(si).
+ho_aperto(no).
+ho_oggetto(no).
+ho_salutato(no).
+apro(0).
+bidder(bidder1).
+bidder(bidder2).
+bidder(bidder3).
+proprietario(proprietario).
+
+pronto:- sveglio(si), ho_aperto(no), ho_salutato(no).
+prontoI:> sleep(15), write('Ciao a tutti, sono pronto!'), nl, nl, retract(ho_salutato(no)), assert(ho_salutato(si)).
+
+prontoagE(Agente) :> write('Agente: '), write(Agente), write(' Pronto'),  checkA(Agente), nl.
+
+richiesta_oggetto:- ho_salutato(si), ho_oggetto(no).
+richiesta_oggettoI:> nl, nl, proprietario(P), write('Adesso richiedo l oggetto da mettere all asta al proprietario...'), nl, messageA(P, send_message(richiesta, Me)).
+
+oggettoE:> nl, write('ho ricevuto oggetto'), nl, retract(ho_oggetto(no)), assert(ho_oggetto(si)).
+
+decido_se_aprire:-  ho_aperto(no), ho_salutato(si), ho_oggetto(si).
+decido_se_aprireI:> random(0,4,A), assert(apro(A)), write(A), nl.
+
+sollecitoE :>nl, write('Vedo che la gente vuole spendere i propri soldi!'), nl, retract(apro(A)), assert(apro(1)), apro_offerte.
+
+apro_offerte:-  ho_aperto(no), ho_salutato(si), apro(A), A == 1, ho_oggetto(si).
+apro_offerteI:> nl, write('OFFERTE APERTE'), nl, retract(ho_aperto(no)), assert(ho_aperto(si)), invia_messaggioA.
+
+invia_messaggioA:> messageA(bidder1, send_message(apertura, Me)),
+		   messageA(bidder2, send_message(apertura, Me)),
+		   messageA(bidder3, send_message(apertura, Me)).
+
+
+propostaE(Bidder, Offerta) :> nl, write(Bidder), write(' ha offerto: '), write(Offerta), verifica_offerte(Bidder, Offerta), nl.
+
+verifica_offerte(Bidder, Offerta) :- controllo(Bidder,Offerta).
+
+controllo(B,O):- nl, O >= 30, write('Offerta accettata'), nl, messageA(B, send_message(accettata, Me)).
+
+
+controllo(B,O):- nl, O < 30, write('Offerta rifiutata'), nl.

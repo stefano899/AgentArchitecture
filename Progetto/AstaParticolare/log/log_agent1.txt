@@ -1,0 +1,6 @@
+send_message(send_message(ready(1),agent1))
+make(mexInviato)
+make(inzia)
+make(inzia)
+make(inzia)
+make(inzia)
