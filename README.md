@@ -32,7 +32,7 @@ The **FIPA primitive** used in this project, using the `"messageA"` call, is:
 
 ## Sequence Diagram  
 
-![Sequence Diagram](documetazione/sequenceAsta.png)  
+![Sequence Diagram](documentazione/sequenceAsta.png)  
 
 ## Event/Action Table – Auctioneer  
 
